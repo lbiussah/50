@@ -1,0 +1,10 @@
+num1 = 4
+num2 = 14.25
+
+def mul_to_int(a, b):
+    result = a * b
+    if result.is_integer():
+        return int(result)
+    return result
+
+print(mul_to_int(num1, num2))
