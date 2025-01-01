@@ -1,0 +1,11 @@
+names_list = ['Иван', 'Петр', 'Анна', 'Мария', 'Дмитрий']
+enemies_list = ['Анна', 'Дмитрий']
+
+def remove_enemies(names, enemies):
+    result = []
+    for name in names:
+        if name not in enemies:
+            result.append(name)
+    return result
+
+print(remove_enemies(names_list, enemies_list))
