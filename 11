@@ -1,0 +1,10 @@
+rad = 0.2
+height = 0.54
+
+def calculate_water_mass(radius, height):
+    water_density = 1000  # кг/м³
+    volume = 3.14 * (radius ** 2) * height
+    mass = volume * water_density
+    return round(mass, 2)
+
+print(calculate_water_mass(rad, height))
