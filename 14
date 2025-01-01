@@ -1,0 +1,11 @@
+num_list = ['1', '2', '3', '4', '5']
+
+def cumulative_array(numbers):
+    result = []
+    cumulative_sum = 0
+    for num in numbers:
+        cumulative_sum += int(num)
+        result.append(cumulative_sum)
+    return result
+
+print(cumulative_array(num_list))
