@@ -1,0 +1,6 @@
+st = '   В   сроке  слишком много   пробелов  '
+
+def fix_whitespace(s):
+    return ' '.join(s.split())
+
+print(fix_whitespace(st))
