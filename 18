@@ -1,0 +1,7 @@
+def search_substr(subst, st):
+    if subst.lower() in st.lower():
+        return "Есть контакт!"
+    return "Мимо!"
+
+print(search_substr("ЛЕТО", "Осень, зима, весна, ЛетО"))  
+print(search_substr("Рождество", "С Новым годом!")) 
