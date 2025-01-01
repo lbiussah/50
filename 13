@@ -1,0 +1,10 @@
+st = 'Эта строка написана хакером'
+
+def hacker_language(s):
+    s = s.replace('а', '4')
+    s = s.replace('е', '3')
+    s = s.replace('А', '4') 
+    s = s.replace('Е', '3') 
+    return s
+
+print(hacker_language(st))
