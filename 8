@@ -1,0 +1,9 @@
+guests = ['Маша','Петя', 'Вика', 'Вова']
+
+def greeting(lst):
+    greeting = ''
+    for i in lst:
+        greeting += 'Привет, ' + i + '!\n'
+    return greeting
+
+print(greeting(guests))
