@@ -1,0 +1,10 @@
+def first_last(letter, st):
+    if letter in st:
+        first_index = st.index(letter)
+        last_index = st.rindex(letter)
+        return (first_index, last_index)
+    return (None, None)
+
+print(first_last("а", "мама"))
+print(first_last("б", "мама"))
+print(first_last("о", "поле")) 
