@@ -1,0 +1,24 @@
+def help_bool(letter):
+    rules = {
+        "к": "Коммутативность: порядок операндов не влияет на результат (A AND B == B AND A).",
+        "а": "Ассоциативность: скобки не влияют на порядок вычисления ((A AND B) AND C == A AND (B AND C)).",
+        "д": "Дистрибутивность: A AND (B OR C) == (A AND B) OR (A AND C).",
+        "м": "Правило де Моргана: NOT (A AND B) == NOT A OR NOT B и NOT (A OR B) == NOT A AND NOT B."
+    }
+    if letter == 'к':
+        return 'Коммутативность: порядок операндов не влияет на результат (A AND B == B AND A).'
+    elif letter == 'а':
+        return 'Ассоциативность: скобки не влияют на порядок вычисления ((A AND B) AND C == A AND (B AND C)).'
+    elif letter == 'д':
+        return 'Дистрибутивность: A AND (B OR C) == (A AND B) OR (A AND C).'
+    elif letter == 'м':
+        return 'Правило де Моргана: NOT (A AND B) == NOT A OR NOT B и NOT (A OR B) == NOT A AND NOT B.'
+    else:
+       return (
+            "Некорректный ввод. Введите одну из следюущих команд:\n"
+            "к: Коммутативность.\n"
+            "а: Ассоциативность.\n"
+            "д: Дистрибутивность.\n"
+            "м: Правило де Моргана.")
+
+print(help_bool("к"))
