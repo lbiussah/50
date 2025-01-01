@@ -1,0 +1,8 @@
+num = 6
+
+def dislike_6(a):
+    if a == int(a) and a == 6:
+        return "Только не 6!"
+    return True
+
+print(dislike_6(num))
