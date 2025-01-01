@@ -1,0 +1,10 @@
+input_str = "15, 2, 8"
+
+def multiply_from_string(numbers_str):
+    numbers = numbers_str.split(", ")
+    numbers_mult = 1
+    for i in numbers:
+        numbers_mult *= int(i)
+    return numbers_mult
+
+print(multiply_from_string(input_str))
