@@ -1,0 +1,11 @@
+user_list = ['42', '51', '20', '5', '78', '15']
+
+def useless(s):
+    max_list = 0
+    for i in s:
+        if int(i) > max_list:
+            max_list = int(i)
+    useless = max_list // len(s)
+    return useless
+
+print(useless(user_list))
